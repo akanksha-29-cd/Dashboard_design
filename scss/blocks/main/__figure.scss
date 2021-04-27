@@ -1,0 +1,34 @@
+.figure{
+    .figure-chart{
+        border: 15px solid transparent;
+        border-color: $light-green $dark-blue $dark-blue $light-green;
+        border-radius: 50%;
+        max-width: 100%;
+        height: px2rem(250);
+        width: px2rem(250);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto px2rem(15) auto;
+        @include lg {
+            margin-bottom: px2rem(15);
+        }
+
+    }
+    .figurecaption{
+        font-size: px2rem(12);
+        font-weight: 400;
+        color: $dark-gray;
+    }
+}
+.figure-chart{
+    .chart-item{
+        font-size: px2rem(35);
+        font-weight: 500;
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: px2rem(10);
+        text-align: center;
+    }
+}

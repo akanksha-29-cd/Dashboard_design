@@ -1,0 +1,31 @@
+/******* Fonts ********/
+
+$primary-font: 'Montserrat', sans-serif;
+$default-font-size: 16;
+
+/****** Color *******/
+$light-gray: #efefef;
+$light-gray-header-icon: #dfdfdf;
+$light-gray-two: #dcdcdc;
+$dark-gray: #808080;
+$dark-gray-two: #4d4d4d;
+$dark-gray-three: #666666;
+$dark-gray-four: #5b5b5b;
+$white: #fff;
+$light-green: #13bc9c;
+$light-green-two: #14a388;
+$dark-blue: #425b77;
+
+/***** Breakpoints *****/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

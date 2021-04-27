@@ -1,0 +1,43 @@
+.main{
+    .main__cards{
+        margin-bottom: px2rem(40);
+    }
+}
+.main__cards{
+    .cards__element{
+        padding: px2rem(20);
+        @include lg {
+            padding: 0;
+        }
+    }
+}
+.info{
+    .info__title{
+        font-weight: 400;
+        color: $dark-gray-two;
+        line-height: 0.6;
+    }
+    .info__des{
+        font-size: px2rem(14);
+        color: $dark-gray;
+    }
+}
+.single-layout{
+    display: flex;
+    justify-content: center;
+}
+.column-layout{
+    display: flex;
+    flex-flow: row nowrap;
+    .element__icon{
+        display: flex;
+        align-items: flex-end;
+        margin-right: px2rem(10);
+    }
+}
+.element__icon{
+    .element__icon_size{
+        height: px2rem(40);
+    }
+}
+
