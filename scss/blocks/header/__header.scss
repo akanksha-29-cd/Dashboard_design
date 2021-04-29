@@ -5,4 +5,37 @@
 .header{
     background-color: $light-gray;
     box-shadow: 0 px2rem(5) px2rem(5) 0 rgba(0, 0, 0 , 0.15);
+    @include flexbox;
+    display: flex;
+    flex-flow: row wrap;
+    .left-arrow{
+        flex: 0 0 8.33%;
+        max-width: 8.33%;
+        padding-right: px2rem(5);
+        padding-left: px2rem(5);
+        @include lg {
+            padding-right: px2rem(15);
+            padding-left: px2rem(15);
+        }
+    }
+    .logo{
+        flex: 0 0 80.333333%;
+        max-width: 80.333333%;
+        padding-right: px2rem(10);
+        padding-left: px2rem(10);
+        @include lg {
+            padding-right: px2rem(15);
+            padding-left: px2rem(15);
+        }
+    }
+    .cancel-icon{
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+        padding-right: px2rem(5);
+        padding-left: px2rem(5);
+        @include lg {
+            padding-right: px2rem(15);
+            padding-left: px2rem(15);
+        }
+    }
 }

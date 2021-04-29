@@ -14,21 +14,19 @@
 <body>
     <div class="container-fluid">
         <header class="header page__container-fluid">
-            <div class="row">
-                <div class="col-sm-1">
-                    <div class="icon icon_arrow text-center">
-                        <i class="fa fa-arrow-left fa-2x icon_gray" aria-hidden="true"></i>
-                    </div>
+            <div class="left-arrow header__left-arrow">
+                <div class="icon text-center">
+                    <i class="fa fa-arrow-left fa-2x icon_gray" aria-hidden="true"></i>
                 </div>
-                <div class="col-sm-10">
-                    <div class="logo">
-                        <img src="image/logo.png" class="img-fluid" alt="logo image" width="150">
-                    </div>
+            </div>
+            <div class="logo header__logo">
+                <div class="logo-box">
+                    <img src="image/logo.png" class="img-fluid" alt="logo image" width="150">
                 </div>
-                <div class="col-sm-1">
-                    <div class="icon icon_cancel text-center">
-                        <i class="fa fa-times fa-2x icon_gray" aria-hidden="true"></i>
-                    </div>
+            </div>
+            <div class="cancel-icon header__cancel-icon">
+                <div class="icon text-center">
+                    <i class="fa fa-times fa-2x icon_gray" aria-hidden="true"></i>
                 </div>
             </div>
         </header>
@@ -42,9 +40,9 @@
             <section class="cards main__cards">
                 <div class="row">
                     <div class="col-sm">
-                        <div class="element cards__element single-layout">
+                        <div class="element cards__element column-layout">
                             <div class="info element__info">
-                                <h2 class="info__title">car</h2>
+                                <h2 class="info__title">Car</h2>
                                 <span class="info__des">Goal Selected</span>
                             </div>
                         </div>
@@ -72,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <div class="element cards__element single-layout">
+                        <div class="element cards__element column-layout">
                             <div class="info element__info">
                                 <h2 class="info__title">SIP</h2>
                                 <span class="info__des">Investment Type</span>
@@ -94,9 +92,10 @@
             </section>
             <section class="projects main__projects">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <figure class="figure projects__figure">
+                    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-3">
+                        <figure class="figure projects__figure">  
                             <div class="figure-chart">
+                                <div class="figure__heighlight"></div>
                                 <div class="chart-item clr_light-green">
                                     <span>Debt</span>
                                     <span>50%</span>
@@ -109,7 +108,7 @@
                             <figcaption class="figurecaption">Aditya Birla Sun Life Frontline Equity Fund - Growth - Direct Plan(25%) </figcaption>
                         </figure>
                     </div>
-                    <div class="col-sm-9">
+                    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-9">
                         <div class="projects-list projects__projects-list">
                             <div class="project-summary project-summary_active">
                                 <div class="project-detail">
@@ -118,8 +117,8 @@
                                     </div>
                                     <div class="project-description">
                                         <ul class="project-list project-description__project-list">
-                                            <li class="item-one project-list__item"><span class="item-one__dot bg_green"></span>  Large Cap</li>
-                                            <li class="item-two project-list__item">Min. Investment Amt : 500</li>
+                                            <li class="item-one project-list__item"><span class="item-one__dot bg_green"></span><span>Large Cap</span></li>
+                                            <li class="item-two project-list__item"><span>Min. Investment Amt : 500</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -132,7 +131,7 @@
                                     </div>
                                     <div class="project-description">
                                         <ul class="project-list project-description__project-list">
-                                            <li class="item-one project-list__item"><span class="item-one__dot bg_light-green"></span>mid/small Cap</li>
+                                            <li class="item-one project-list__item"><span class="item-one__dot bg_light-green"></span><span>mid/small Cap</span></li>
                                             <li class="item-two project-list__item">Min. Investment Amt : 500</li>
                                         </ul> 
                                     </div>
@@ -146,7 +145,7 @@
                                     </div>
                                     <div class="project-description">
                                         <ul class="project-list project-description__project-list">
-                                            <li class="item-one project-list__item"><span class="item-one__dot bg_blue"></span>Long term incom/gilt</li>
+                                            <li class="item-one project-list__item"><span class="item-one__dot bg_blue"></span><span>Long term incom/gilt</span></li>
                                             <li class="item-two project-list__item">Min. Investment Amt : 500</li>
                                         </ul>  
                                     </div>
