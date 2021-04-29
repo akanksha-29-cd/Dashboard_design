@@ -4,13 +4,15 @@
         margin-bottom: px2rem(40);
     }
 }
-.title__heading{
-    font-size: px2rem(40);
-    font-weight: 300;
-    line-height: 1;
-    color: $dark-gray-four;
-}
-.title__span{
-    font-size: 0.8rem;
-    color: $dark-gray;
+.title{
+    .title__heading{
+        font-size: px2rem(40);
+        font-weight: 300;
+        line-height: 1;
+        color: $dark-gray-four;
+    }
+    .title__span{
+        font-size: 0.8rem;
+        color: $dark-gray;
+    }
 }

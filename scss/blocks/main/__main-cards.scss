@@ -3,41 +3,51 @@
         margin-bottom: px2rem(40);
     }
 }
-.main__cards{
+.cards{
     .cards__element{
         padding: px2rem(20);
-        @include lg {
+        @include md {
             padding: 0;
         }
     }
 }
-.info{
-    .info__title{
-        font-weight: 400;
-        color: $dark-gray-two;
-        line-height: 0.6;
-    }
-    .info__des{
-        font-size: px2rem(14);
-        color: $dark-gray;
-    }
-}
-.single-layout{
-    display: flex;
+.column-layout{
+    @include flexbox;
+    @include flex-flow(row wrap);
     justify-content: center;
 }
-.column-layout{
-    display: flex;
-    flex-flow: row nowrap;
+.element{
     .element__icon{
-        display: flex;
-        align-items: flex-end;
+        @include flexbox;
+        flex: 0 0 20%;
+        max-width: 20%;
+        justify-content: center;
+        align-items: center;
         margin-right: px2rem(10);
+        @include xl{
+            align-items: flex-end;
+        }
+        @include md{
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+        @include lg{
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+        .element__icon_size{
+            height: px2rem(40);
+        }
+    }
+    .info{
+        .info__title{
+            font-weight: 400;
+            color: $dark-gray-two;
+            margin-bottom: px2rem(-4);
+        }
+        .info__des{
+            font-size: px2rem(14);
+            color: $dark-gray;
+        }
     }
 }
-.element__icon{
-    .element__icon_size{
-        height: px2rem(40);
-    }
-}
-
