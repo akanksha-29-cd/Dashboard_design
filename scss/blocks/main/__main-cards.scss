@@ -13,7 +13,7 @@
 }
 .column-layout{
     @include flexbox;
-    @include flex-flow(row wrap);
+    @include flex-flow(row nowrap);
     justify-content: center;
 }
 .element{
