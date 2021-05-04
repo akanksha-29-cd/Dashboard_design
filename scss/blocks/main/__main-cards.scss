@@ -1,9 +1,19 @@
 .main{
     .main__cards{
-        margin-bottom: px2rem(40);
+        margin:0 px2rem(-15) px2rem(40) px2rem(-15);
     }
 }
 .cards{
+    display: flex;
+    flex-flow: wrap;
+    .cards__col{
+        width: 100%;
+        padding: 0 px2rem(15);
+        margin: 0 auto;
+        @include md{
+            flex: 1;
+        }
+    }
     .cards__element{
         padding: px2rem(20);
         @include md {
@@ -40,6 +50,8 @@
         }
     }
     .info{
+        @include flexbox;
+        flex-flow: column wrap;
         .info__title{
             font-weight: 400;
             color: $dark-gray-two;
